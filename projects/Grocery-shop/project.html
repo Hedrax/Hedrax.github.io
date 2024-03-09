@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <title>Project Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../index_files/bootstrap.css">
+    <link rel="stylesheet" href="../../index_files/style.css">
+    <link rel="stylesheet" href="../../index_files/font-awesome.min.css">
+    <link rel="stylesheet" href="../../index_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../index_files/simpleLightbox.css">
+    <link rel="stylesheet" href="../../index_files/nice-select.css">
+    <link rel="stylesheet" href="../../index_files/animate.css">
+    <link rel="stylesheet" href="../../index_files/magnific-popup.css">
+    <link rel="stylesheet" href="../../index_files/flaticon.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../../index_files/style(1).css">
+    <link rel="stylesheet" href="../../index_files/responsive.css">
+        <style>
+        .container {
+            position: relative;
+
+        }
+
+        .image-view {
+            float: center;
+            width: 40%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        
+        @media (max-width: 767px) {
+        .description{
+            display: contents;
+        }
+        
+        .image-view{
+            display: inline
+        }
+    }
+        .image-view img {
+            max-width: 100%;
+            height: 600px;
+            display: block;
+            
+        }
+
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            text-align: center;
+        }
+
+        .nav-buttons button {
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            color: #333;
+            font-size: 20px;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .nav-buttons button:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .description {
+            position: absolute;
+            top: 0;
+            left: calc(40% + 20px); /* Width of the image + margin */
+            width: 60%; /* Remaining width */
+            padding: 40px;
+            color: black;
+        }
+
+        .topics {
+            clear: both;
+            padding: 10px 0px;
+        }
+
+        .topics ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .topics ul li {
+            display: inline;
+            margin-right: 8px;;
+            font-weight: bold;
+        }
+
+        .github-button {
+            margin-top: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .github-button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Menu Area -->
+<header class="header_area navbar_fixed">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container box_1620">
+                <a class="navbar-brand logo_h" href="../../index.html"><img src="../../index_files/logo.png" alt="" width="250"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-collapse offset collapse show" id="navbarSupportedContent" style="">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../portfolio.html">portofolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1dfdtwCD38Eif2gcBdkJ9KLaLas8MH92n/view?usp=sharing">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Header Menu Area -->
+
+<!-- Home Banner Area -->
+<section class="home_banner_area">
+    <div class="container box_1620">
+        <div class="image-view" style="justify-content: center;align-items: center;">
+            <img id="projectImage" src="./img/3.jpg" alt="Project Image">
+            <div class="nav-buttons" style="left: 0;">
+                <button onclick="previousImage()"><i class="fa fa-chevron-left"></i></button>
+            </div>
+            <div class="nav-buttons" style="right: 0;">
+                <button onclick="nextImage()"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="description">
+            <h1> Grocery Application <a style="padding-left:10px" href="https://github.com/GasserXx/Grocery-shopping/" class="list personal_social"><i class="fa fa-github" aria-hidden="true"></i></a></h1>
+            <h3 style="padding:10px">Project Details</h3>
+            <p style="padding-left:10px">Online Grocery Store Application.
+                                     <Br>The application is implemented using Android Native with MVVM archtechture.
+                                     <Br>Main data of the application is stored on a remote PostgreSQL database and the relvent cached locally using SQLite. 
+                                     <Br>Same goes for images stored remotly then cached during the session.
+                                     <Br>User confidential data stored using best practice encryption/storing methods.
+            </p>
+                    
+        <!-- Topics Area -->
+        <div class="topics">
+            <div class="container">
+                <ul style="padding:0px;">
+                    <li>Kotlin</li>
+                    <li>Android</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+        </div>
+        
+            <a href="https://github.com/GasserXx/Grocery-shopping/" class="github-button">View on GitHub</a>
+        </div>
+
+
+    </div>
+</section>
+<!-- Home Banner Area -->
+
+<!--================Footer Area =================-->
+<footer class="footer_area p_120">
+    <div class="container">
+        <div class="row footer_inner">
+        	<div class="col-lg-5 col-sm-6">
+        		<aside class="f_widget ab_widget">
+        			<div class="f_title">
+        				<h3>Contact</h3>
+                        <ul class="list basic_info"  style="padding-top:10px;padding-bottom:5px">
+								<li><a><i class="fa fa-phone"></i>    +20 121-288-9678</a></li>
+								<li><a><i class="fa fa-envelope-o"></i>    alhossien.waly@ejust.edu.eg</a></li>
+							</ul>
+							<ul style="padding: 5px; margin: 0; list-style-type: none;">
+										
+								<li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alhossien-waly/"><i class="fa fa-linkedin"></i></a></li>
+								<li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/Hedrax"><i class="fa fa-github"></i></a></li>
+                                <li style="display: inline-block; margin-right: 10px;"><a href="mailto:%20alhossien.waly@ejust.edu.eg"><i class="fa fa-envelope-o"></i></a></li>
+							</ul>
+        			</div>
+        					
+        		</aside>
+        	</div>
+        			
+        			
+        </div>
+    </div>
+</footer>
+<!--================End Footer Area =================-->
+        
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../index_files/jquery-3.3.1.min.js.download"></script>
+<script src="../../index_files/popper.js.download"></script>
+<script src="../../index_files/bootstrap.min.js.download"></script>
+<script>
+    var images = [
+        "./img/1.jpg",
+        "./img/2.jpg",
+        "./img/3.jpg",
+        "./img/4.jpg",
+        "./img/5.jpg",
+        "./img/6.jpg",
+        "./img/7.jpg",
+        "./img/8.jpg",
+        "./img/9.jpg",
+        "./img/10.jpg",
+        "./img/11.jpg"
+    ];
+    var currentIndex = 0;
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById("projectImage").src = images[currentIndex];
+    }
+
+    function previousImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        document.getElementById("projectImage").src = images[currentIndex];
+    }
+</script>
+</body>
+</html>
