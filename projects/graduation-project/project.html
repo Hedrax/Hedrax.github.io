@@ -21,7 +21,6 @@
     <style>
         .container {
             position: relative;
-
         }
 
         .image-view {
@@ -156,7 +155,12 @@
             <h1>Arabic Handwritten OCR Data Listing system </h1>
             <h2 style="color:#000000BB">Graduation Project</h2>
             <h3 style="padding:10px">Project Details</h3>
-            <p style="padding-left:10px"> A Multi-Model project that tackles the Arabic handwritten OCR problem. The project is under construction and all details will be available upon completion.</p>
+            <p style="padding-left:10px"> A Multi-Model project to convert a handwritten document into CSV file. 
+                <Br> What have been constracted is the base solution for the problem, consists of 3 parts.
+                <Br> <strong>Document Segmentation:</strong> removes unwanted background of the image, leaving the image of only document paper using canny algorithm.
+                <Br> <strong>Word Segmentation:</strong> using differentiable binarization and adaptive fusion to detect text in the image for further segemenation.
+                <Br> <strong>OCR Engine:</strong> Deep Learning model of CNN-BiLstm-CTC archtecture to recognize images of handwritten and printed text.
+            </p>
                     
         <!-- Topics Area -->
         <div class="topics">
@@ -166,9 +170,13 @@
                     <li>Deep Learning</li>
                     <li>Computer Vision</li>
                     <li>Image Processing</li>
+                    <li>Optical Character Recognition</li>
+                    <li>Word Detection</li>
                 </ul>
             </div>
         </div>
+        
+            <a href="https://github.com/Hedrax/data_listing_base_solution" class="github-button">View on GitHub</a>
         </div>
 
     </div>
