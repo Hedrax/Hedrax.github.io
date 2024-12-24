@@ -140,8 +140,8 @@
 
 <!-- Home Banner Area -->
 <section class="home_banner_area">
-    <div class="container box_1620">
-        <div class="image-view" style="justify-content: center;align-items: center;">
+    <div class="container box_1620 style="min-height: 300vh;">
+        <div class="image-view" style="justify-content: center;align-items: center;min-height: 120vh;">
             <img id="projectImage" src="./img/2.png" alt="Project Image">
             <div class="nav-buttons" style="left: 0;">
                 <button onclick="previousImage()"><i class="fa fa-chevron-left"></i></button>
@@ -156,10 +156,15 @@
             <h2 style="color:#000000BB">Graduation Project</h2>
             <h3 style="padding:10px">Project Details</h3>
             <p style="padding-left:10px"> A Multi-Model project to convert a handwritten document into CSV file. 
-                <Br> What have been constracted is the base solution for the problem, consists of 3 parts.
+		The project is a bit huge with mobile, desktop, AI, and Computer vision parts.
+		<Br> The main idea is to create an application that can receive a receipts or a documents that is written in handwritten Arabic and turn it with ease in an automated process to CSVs.
+                <Br> What have been initially constructed and published on GitHub is the base solution for the problem, consists of 3 parts.
                 <Br> <strong>Document Segmentation:</strong> removes unwanted background of the image, leaving the image of only document paper using canny algorithm.
-                <Br> <strong>Word Segmentation:</strong> using differentiable binarization and adaptive fusion to detect text in the image for further segemenation.
-                <Br> <strong>OCR Engine:</strong> Deep Learning model of CNN-BiLstm-CTC archtecture to recognize images of handwritten and printed text.
+                <Br> <strong>Line Segmentation:</strong> using differentiable binarization and adaptive fusion to detect text in the image for further line segmentation.
+                <Br> <strong>OCR Engine:</strong> Deep Learning model of CNN-BiLstm-CTC architecture to recognize images of handwritten and printed text.
+	    <Br> <strong>Update:</strong> The OCR solution has been updated to Transformer architecture after experiments with other competitive approaches such as Swin V2 Vision Encoder - Bert decoder architecture with recognition rate reaching <strong>90%</strong> on handwritten and over <strong>99%</strong> on printed.
+	    <Br>Many techniques had been used to reach that accuracy including custom thensized data and augmentation techniques.
+	    <Br>Stay Tuned for the upcoming update of the released BETA version of the project.
             </p>
                     
         <!-- Topics Area -->
