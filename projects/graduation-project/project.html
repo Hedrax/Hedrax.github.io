@@ -110,6 +110,39 @@
         .github-button:hover {
             background-color: #ffffff;
         }
+
+.linkedin-button {
+    margin-top: 20px;
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.linkedin-button:hover {
+    background-color: #ffffff; /* Darker LinkedIn shade for hover effect */
+}
+
+.arxiv-button {
+    margin-top: 20px;
+    background-color: #B31B1B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.arxiv-button:hover {
+    background-color: #ffffff; /* Darker red for hover effect */
+}
+
     </style>
 </head>
 <body>
@@ -153,35 +186,52 @@
 
         <div class="description">
             <h1>Invizo: Arabic Handwritten Document OCR Solution</h1>
-            <h3 style="padding:10px">Project Details</h3>
-            <p style="padding-left:10px"> A Multi-Model project to convert a handwritten document into CSV file. 
-		The project is a bit huge with mobile, desktop, AI, and Computer vision parts.
-		<Br> The main idea is to create an application that can receive a receipts or a documents that is written in handwritten Arabic and turn it with ease in an automated process to CSVs.
-                <Br> What have been initially constructed and published on GitHub is the base solution for the problem, consists of 3 parts.
-                <Br> <strong>Document Segmentation:</strong> removes unwanted background of the image, leaving the image of only document paper using canny algorithm.
-                <Br> <strong>Line Segmentation:</strong> using differentiable binarization and adaptive fusion to detect text in the image for further line segmentation.
-                <Br> <strong>OCR Engine:</strong> Deep Learning model of CNN-BiLstm-CTC architecture to recognize images of handwritten and printed text.
-	    <Br> <strong>Update:</strong> The OCR solution has been updated to Transformer architecture after experiments with other competitive approaches such as Swin V2 Vision Encoder - Bert decoder architecture with recognition rate reaching <strong>90%</strong> on handwritten and over <strong>99%</strong> on printed.
-	    <Br>Many techniques had been used to reach that accuracy including custom thensized data and augmentation techniques.
-	    <Br><strong>Note that we're open sourcing the BETA version of the product once we complete the portable version by march 2025 isa Stay Tuned!!</strong>
-            </p>
+        <h2>Project Overview</h2>
+        <p>
+            <strong>Invizo</strong> is an open-source <strong>Arabic Handwritten OCR Solution</strong> designed to perform 
+            batch recognition on real-world handwritten Arabic documents. The system operates based on a defined template 
+            image of a document type and extracts text fields efficiently. 
+            Invizo is powered by a <strong> DBNet detection model </strong> trained on Arabic Handwritten Line Segmentation. 
+            The recognition component is based on a <strong>CNN-Transformer model</strong>, trained using public handwritten datasets and a custom synthesized dataset to improve recognition accuracy. 
+        </p>
+
+        <h2>Software Versions</h2>
+
+        <h3>1. Enterprise Version</h3>
+        <ul>
+            <li>Mobile Application – Designed for workers to capture documents.</li>
+            <li>Backend Solution – AI-powered service with storage and interaction capabilities.</li>
+            <li>Desktop Application – For operators to review and refine OCR results.</li>
+        </ul>
+
+        <h3>2. Portable Version</h3>
+        <ul>
+            <li>Standalone Desktop Application – An all-in-one OCR solution.</li>
+        </ul>
+        <h4>Download & Test</h4>
+        <p>
+            If you're a Windows user, you can test Portable Invizo by downloading the application installer:
+        </p>
+        <a href="https://your-download-link" class="button">Download Windows Installer</a>
+        </p>
                     
         <!-- Topics Area -->
         <div class="topics">
             <div class="container">
                 <ul style="padding:0px;">
                     <li>Python</li>
+		    <li>JavaFX</li>
                     <li>Deep Learning</li>
                     <li>Computer Vision</li>
                     <li>Image Processing</li>
                     <li>Optical Character Recognition</li>
-                    <li>Word Detection</li>
+                    <li>Real-Scene Line Segmenetation</li>
                 </ul>
             </div>
         </div>
         
-            <a href="https://github.com/Hedrax/data_listing_base_solution" class="github-button">View on GitHub</a>
-		<a href="https://arxiv.org/abs/2502.05277"  class="github-button">View our associated Paper</a>	
+            <a href=https://github.com/Hedrax/Invizo-OCR" class="github-button">View on GitHub</a>
+		<a href="https://arxiv.org/abs/2502.05277"  class="arxiv-button">Paper</a>	
         </div>
 
     </div>
@@ -234,7 +284,11 @@
         "./img/6.png",
         "./img/1.jpeg",
         "./img/2.jpeg",
-        "./img/3.jpg",
+        "./img/7.png",
+        "./img/8.png",
+        "./img/9.png",
+        "./img/10.png",
+        "./img/11.png"
     ];
     var currentIndex = 0;
 
